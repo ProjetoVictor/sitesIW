@@ -1,0 +1,58 @@
+
+		body{
+			width: 90%;
+			margin-left:auto;
+			margin-right:auto;
+			background-color: #191970;
+	
+		}
+	
+		h1{
+			text-align: center;
+			font-size:35px;
+			text-decoration: none;
+			text-decoration: underline;
+
+		}
+
+		h2{
+			text-align: center;
+			color: #D3D3D3; 
+			font-size:30px;
+		}
+		
+		p{
+			font-size: 20px;
+			color:#DCDCDC;
+			text-align: justify;
+		}
+
+		figure{
+			text-align: center;
+
+		}
+	
+		img{
+
+			border: 10px double 
+		}	
+
+		a:link {
+	  color: red;
+		}
+
+		/* visited link */
+		a:visited {
+		  color: #DCDCDC;
+		}
+
+		/* mouse over link */
+		a:hover {
+		  color: #4F4F4F;
+		}
+
+		/* selected link */
+		
+		a:active {
+  			color: blue;
+		}

@@ -1,11 +1,17 @@
 
 		body{
+			background-color: #191970;
+			
+		}
+		.container{
 			width: 90%;
 			margin-left:auto;
 			margin-right:auto;
-			background-color: #191970;
-	
 		}
+		header{
+			color:#191970 ;
+			background:black
+		 }
 	
 		h1{
 			text-align: center;
@@ -55,4 +61,18 @@
 		
 		a:active {
   			color: blue;
+		}
+		table{
+			width: 100%
+			border: 10px double;
+			border-collapse:collapse;
+		}
+		th,td{
+			border: 10px double; 
+			color:#DCDCDC; 
+			font-size: 20px;
+		}
+		.centro{
+			text-align: center;
+			background: black 
 		}

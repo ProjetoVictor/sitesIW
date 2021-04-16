@@ -1,6 +1,6 @@
 body{
 	background-image:url("../img/img10.png");
-	background-repeat: round;
+	background-repeat:round;
 }
 .container{
 	width: 80%;
@@ -8,11 +8,13 @@ body{
 	margin-right:auto;
 }
 header,footer{
+	font-family: 'Great Vibes', cursive;
 	color:#191970 ;
 	background-color:rgba(0,0,0,0.7);
 	padding: 2em 3em;		
 } 
 .titulo{
+	font-family: 'Berkshire Swash', cursive;
 	text-align: center;
 	text-decoration: none;
 	text-decoration: underline;
@@ -34,6 +36,7 @@ h2{
 
 }
 p{
+	font-family: 'VT323', monospace;
 	font-size: 1.3em;
 	color:#DCDCDC;
 	text-align: justify;
@@ -72,6 +75,7 @@ a:active {
   	color: blue;
 }
 table{
+	font-family: 'VT323', monospace;
 	width: 80%
 	border: 1em double;
 	border-collapse:collapse;
@@ -92,10 +96,11 @@ th,td{
 	background:rgba(0,0,139,0.25);
 	border-radius:1.3em;
 	padding: 2em 2em;	
-	text-decoration:none;
 	display: inline-block;
+	text-align: center; 
 }
 ul,ol{
+	font-family: 'VT323', monospace;
 	font-size: 1.3em;
 	color:#DCDCDC;
 	text-align: justify;

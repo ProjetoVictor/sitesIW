@@ -1,22 +1,65 @@
-body{
-	}
-.container{
-	width: 80%;
-	margin-left:auto;
-	margin-right:auto;
-}
+
 header,footer{
 	font-family: 'Great Vibes', cursive;
 	color:#191970 ;
-	background-color:rgba(0,0,0,0.7);
-	padding: 2em 3em;		
+	background-color:rgba(100,149,237);
+	padding: 1%;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-size: 1.2em;
+	line-height: 1.5;		
 } 
-.titulo{
-	font-family: 'Berkshire Swash', cursive;
-	text-align: center;
-	text-decoration: none;
-	text-decoration: underline;
+.fixo{
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: 1030;
 }
+.ajustes{
+	line-height: 1;
+	text-align: center;
+}
+
+.container{
+	margin-top: 60%;
+	width: 80%;
+	margin-left:auto;
+	margin-right:auto;
+	position: relative;
+}
+@media screen and (max-height: 599px){
+	.container{
+		margin-top: 65%;
+	}
+}
+@media screen and (min-height: 600px){
+	.container{
+		margin-top: 40%;
+	}
+}
+@media only screen and (min-height: 768px){
+	.container{
+		margin-top: 15%;
+	}
+	header{
+		background-color:rgba(100,149,237);
+		flex-direction: row;
+		position: relative;
+	}
+	.menu-opcoes{
+		position: absolute;
+		right: 5%;
+		top: 50%;
+	}
+	.menu-opcoes ul li{
+		display: inline;
+		margin-left: 10px;
+	}
+}
+
 h1{
 	font-family: 'Architects Daughter', cursive;
 	text-align: center;
@@ -42,39 +85,41 @@ p{
 	margin-bottom: 1.5%;
 
 }
-figure{
+.titulo{
+	font-family: 'Berkshire Swash', cursive;
 	text-align: center;
-}	
+	text-decoration: none;
+	text-decoration: underline;
+}
+
 .imgtexto{
 	width: 30%;
 	border: 0.5em double;
 	}	
-.canto{
-	text-align:left;
-}
+figure{
+	text-align: center;
+}	
 a:link {
 	background:rgba(0,0,139,0.25);
 	color: white;
-  	padding: 1em 1.3em;
  	text-decoration: none;
   	display: inline-block;
   	border-radius:1.3em;
   	margin-top: 1.5%;
 	margin-bottom: 1.5%;
 }
-
 /* visited link */
 a:visited {
   color: #DCDCDC;
 }
-/* mouse over link */
+ /*mouse over link*/ 
 a:hover {
   color: #4F4F4F;
 }
 /* selected link */
 a:active {
   	color: blue;
-}
+}*/
 table{
 	font-family: 'VT323', monospace;
 	width: 80%
@@ -100,7 +145,7 @@ th,td{
 	display: inline-block;
 	text-align: center; 
 }
-ul,ol{
+.lestatexto{
 	font-family: 'VT323', monospace;
 	font-size: 1.3em;
 	color:#1C1C1C;
@@ -108,3 +153,4 @@ ul,ol{
 	margin-top: 1.1%;
 	margin-bottom: 1.1%;
 }
+

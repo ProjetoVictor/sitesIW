@@ -1,14 +1,14 @@
 
 header,footer{
-	font-family: 'Great Vibes', cursive;
+	font-family: 'VT323', monospace;
 	color:#191970 ;
 	background-color:rgba(100,149,237);
-	padding: 1%;
+	padding: 0.3%;
 	position: relative;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	font-size: 1.2em;
+	font-size: 1.5em;
 	line-height: 1.5;		
 } 
 .fixo{
@@ -30,17 +30,17 @@ header,footer{
 	margin-right:auto;
 	position: relative;
 }
-@media screen and (max-height: 599px){
+@media screen and (max-width: 599px){
 	.container{
 		margin-top: 65%;
 	}
 }
-@media screen and (min-height: 600px){
+@media screen and (min-width: 600px){
 	.container{
-		margin-top: 40%;
+		margin-top: 42%;
 	}
 }
-@media only screen and (min-height: 768px){
+@media only screen and (min-width:768px){
 	.container{
 		margin-top: 15%;
 	}

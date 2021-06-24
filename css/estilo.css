@@ -29,10 +29,90 @@ header,footer{
 	margin-left:auto;
 	margin-right:auto;
 	position: relative;
+	margin: 0 auto;
+}
+#sobre{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+}
+#sobre .sobre{
+	text-align: center;
+	border: 0.5em #1C1C1C solid;
+	border-radius: 5%;
+}
+.imgsobre{
+	width: 40%;
+	height: 40%;
+	transition: width 2s, height 2s, transform 2s;
+}
+.imgsobre:hover {
+	width: 60%;
+	height: 60%;
+   
+}
+#sobre h3{
+	font-family: 'Architects Daughter', cursive;
+	color: #6A5ACD;
+}
+#galeria{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+}
+#galeria .galeria{
+	text-align: center;
+	border: 0.5em #1C1C1C solid;
+	border-radius: 5%;
+}
+.imggaleria{
+	width: 40%;
+	height: 40%;
+	transition: width 2s, height 2s, transform 2s;
+}
+.imggaleria:hover {
+	width: 60%;
+	height: 60%;
+   
+}
+.imggaleria{
+	width: 40%;
+}
+.item{
+	position: relative;
+	margin: 1% 0%;
+}
+.item::before{
+	content:'';
+	position: relative;
+	left: 0;
+	top: 0;
+	padding: 1% 2%;
+	background-image: url('../img/j1.png');
+	background-repeat: no-repeat;
+}
+.itens{
+	position: relative;
+	margin: 1% 0%;
+	
+}
+.itens::before{
+	content:'';
+	position: relative;
+	left: 0;
+	top: 0;
+	padding: 1% 2%;
+	background-image: url('../img/j3.png');
+	background-repeat: no-repeat;
 }
 @media screen and (max-width: 599px){
 	.container{
 		margin-top: 65%;
+	}
+	.apagar{
+		display:  none;
 	}
 }
 @media screen and (min-width: 600px){
@@ -42,7 +122,7 @@ header,footer{
 }
 @media only screen and (min-width:768px){
 	.container{
-		margin-top: 15%;
+		margin-top: 11%;
 	}
 	header{
 		background-color:rgba(100,149,237);
@@ -57,6 +137,40 @@ header,footer{
 	.menu-opcoes ul li{
 		display: inline;
 		margin-left: 10px;
+	}
+	#sobre{
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	#sobre h1, h3, p{
+		width: 100%;
+		text-align: center;
+	}
+	#sobre .sobre{
+		width: 48%;
+		align-items: center;
+		margin-right: 0.5%;
+		border: 0.5em #1C1C1C solid;
+		border-radius: 5%;
+	}
+	#sobre .espaco{
+		margin-right: 4%;
+		text-align: justify;
+	}
+	#galeria{
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	#galeria h1, p{
+		width: 100%;
+		text-align: center;
+	}
+	#galeria .galeria{
+		width: 30%;
+		align-items: center;
+		margin-right: 0.5%;
+		border: 0.5em #1C1C1C solid;
+		border-radius: 5%;
 	}
 }
 
@@ -76,6 +190,9 @@ h2{
 	margin-bottom: 2%;
 
 }
+h3{
+	font-size:1.5em;
+}
 p{
 	font-family: 'VT323', monospace;
 	font-size: 1.3em;
@@ -91,11 +208,39 @@ p{
 	text-decoration: none;
 	text-decoration: underline;
 }
+.fundo{
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 3%;
+	font-size: 1.2em;
+	border-radius: 5%;
+	border: #000000 1em double;
+}
+.distancia{
+	margin top: 1.5%; 
+	margin-bottom:1.5%;
 
+}
+.descolar{
+	margin-top: 4%;
+}
 .imgtexto{
 	width: 30%;
 	border: 0.5em double;
-	}	
+	}
+.imgfloat{
+	width: 30%;
+	border: 0.5em double;
+	float: left;
+	margin-right: 15%;
+}	
+.flot{
+	width: 32%;
+	border: 0.5em double;
+	float: left;
+	margin-right: 15%;
+}
 figure{
 	text-align: center;
 }	
@@ -124,7 +269,7 @@ table{
 	font-family: 'VT323', monospace;
 	width: 80%
 	border: 1em double;
-	border-collapse:collapse;
+	border radius: 5%;
 	margin-top: 1.2%;
 	margin-bottom: 1.2%;
 }
